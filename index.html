@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takayama AI | Auckland Builder Scout Demo</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f3f6fc; color: #333; text-align: center; }
+        .container { max-width: 600px; padding: 20px; }
+        h1 { color: #1a73e8; }
+        p { line-height: 1.6; }
+        .badge { background: #e8f0fe; color: #1967d2; padding: 5px 12px; border-radius: 20px; font-size: 14px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="badge">Auckland 2026 Ready</span>
+        <h1>Auckland Builder SDR Demo</h1>
+        <p>Gidday! This is a live demonstration of the Takayama AI Lead Scout.</p>
+        <p><strong>Look for the chat bubble in the bottom right corner</strong> to start the conversation. Try asking about the 70m² minor dwelling rules or mention you want to build in a specific suburb like Orewa.</p>
+    </div>
+
+    <!-- YOUR DIALOGFLOW CODE BELOW -->
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <df-messenger
+      location="australia-southeast1"
+      project-id="stark-building-scout"
+      agent-id="f86fff0e-2247-4de1-bd10-5037009e893d"
+      language-code="en"
+      max-query-length="-1">
+      <df-messenger-chat-bubble
+        chat-title="Auckland-Builder-SDR">
+      </df-messenger-chat-bubble>
+    </df-messenger>
+    <style>
+      df-messenger {
+        z-index: 999;
+        position: fixed;
+        bottom: 16px;
+        right: 16px;
+      }
+    </style>
+</body>
+</html>
