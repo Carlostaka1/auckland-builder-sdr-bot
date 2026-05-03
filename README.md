@@ -21,9 +21,9 @@ This agent isn't just a chatbot; it is a specialized lead-capture system that un
 4. **Automate:** Triggers a lead notification to the builder and provides a direct Calendly booking link.
 
 ## 📂 Repository Contents
-- `/prompts`: Contains the "Neutral Builder" system instructions used to power the LLM.
-- `/logic-flow`: Architectural breakdown of the decision-making process.
+- /prompts: Contains the "Neutral Builder" system instructions used to power the LLM.
+- /build-files: Architectural breakdown of the decision-making process.
 
 ---
-**Developed by [Your Name/Agency Name]**  
+**Developed by Carlos Takayama | Takayama AI**  
 *Specializing in AI Automation for the NZ Trade Industry.*
